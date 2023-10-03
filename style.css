@@ -1,6 +1,6 @@
-*{
- font-size: 20px;
- font-weight: bold;
+* {
+  font-size: 20px;
+  font-weight: bold;
 }
 
 body {
@@ -24,82 +24,60 @@ body {
   object-fit: cover;
 }
 
-.card:hover .panel {
-  display: block;
+.card:hover #save {
+  transition: 2s;
+  top: 5%;
+  right: 5%;
+}
+
+.btn_comm {
+  padding-block: 20px;
+  border-radius: 30px;
   position: absolute;
-  width: 100%;
-  height: 100%; 
-  top: 0;
-  left: 0; 
 }
 
-.btn_comm{ 
- padding-block: 20px; 
- border-radius: 30px;
- position: inherit;
-}
-
-#save{ 
- border: unset;
- width: 30%;
- color: white;
- background-color: red;
- top: 5%;
- right: 5%;
+#save {
+  border: unset;
+  width: 30%;
+  color: white;
+  background-color: red;
+  top: -20%;
+  right: 5%;
 }
 
 .bottom_btn {
- color: black;
- background-color: #D6D6D1;
- opacity: 0.8;
+  color: black;
+  background-color: #d6d6d1;
+  opacity: 0.8;
 }
 
 #origin {
- padding-inline: 5px;
- bottom: 5%;
- left: 5%;
- width: 46%;
- text-align: center;
+  padding-inline: 5px;
+  bottom: -20%;
+  left: 5%;
+  width: 46%;
+  text-align: center;
 }
 
 .other_button {
- position: inherit;
- bottom: 5%;
- right: 5%;
+  position: absolute;
+  bottom: -20%;
+  right: 5%;
 }
 
-.other_button ion-icon{
- padding: 20px;
- border-radius: 50px;
+.other_button ion-icon {
+  padding: 20px;
+  border-radius: 50px;
 }
 
-#save:hover {
- -webkit-animation: mover 1s infinite  alternate;
- animation: mover 1s infinite traslate  ;
+.card:hover #origin {
+  transition: 2s;
+  bottom: 5%;
+  left: 5%;
 }
 
-#origin:hover,  
-.other_button ion-icon:hover {
- -webkit-animation: mover_up 1s infinite  alternate;
- animation: mover_up 1s infinite traslate  ;
-}
-
-@-webkit-keyframes mover {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(20px); }
-}
-
-@keyframes mover {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(20px); }
-}
-
-@-webkit-keyframes mover_up {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-20px); }
-}
-
-@keyframes mover_up {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-20px); }
+.card:hover .other_button {
+  transition: 2s;
+  bottom: 5%;
+  right: 5%;
 }

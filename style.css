@@ -1,0 +1,17 @@
+body {
+  background-color: rgb(68, 68, 68);
+}
+
+.card {
+  width: 25%;
+  border-radius: 30px;
+}
+
+.card img {
+  width: 100%;
+  margin: 50px;
+  /* height: 100%; */
+  aspect-ratio: 1/1.2;
+  /* object-fit: cover; */
+  overflow: hidden;
+}

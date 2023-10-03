@@ -7,6 +7,7 @@ body {
   background-color: rgb(68, 68, 68);
   margin: 0;
 }
+
 .card {
   margin: 20vh auto;
   width: 40%;
@@ -16,6 +17,20 @@ body {
   overflow: hidden;
   position: relative;
   border: 10px white solid;
+}
+
+.card:hover .panel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(4, 4, 4);
+  background: linear-gradient(
+    0deg,
+    rgba(4, 4, 4, 0.33638443935926776) 58%,
+    rgba(249, 249, 250, 1) 100%
+  );
 }
 
 .card img {

@@ -7,16 +7,25 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div class="card">
+
+  <div class="card">
       <img src="./assets/wedding_detail.jpg" alt="wedding detail" />
+
       <div class="panel">
 	<button id="save" class="btn_comm">Save</button>
-	<button id="origin" class="btn_comm">/ Todo Eventi...</button>
- 	<div class="other_button">         
-	  <button>&#10548</button>
-	  <button>...</button>
+	<div id="origin" class="btn_comm bottom_btn"><ion-icon name="arrow-redo-sharp"></ion-icon> Todo Eventi...</div>
+ 	
+	<div class="other_button">         
+	  <ion-icon class="bottom_btn" name="arrow-up-sharp"></ion-icon>
+	  <ion-icon class="bottom_btn" name="ellipsis-horizontal-sharp"></ion-icon>
 	</div>
+
       </div>
-    </div>
+
+  </div>
+
+   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
   </body>
 </html>
